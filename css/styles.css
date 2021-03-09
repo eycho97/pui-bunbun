@@ -56,7 +56,7 @@ header {
 
 .topnav li {
   display: inline-block;
-  margin-left: 84px;
+  margin-left: 5rem;
 }
 
 .topnav .right {
@@ -85,16 +85,22 @@ footer {
   height: 100px;
 }
 
-.footer-container{
-  position: relative;
-  width: 70%;
-  margin: auto;
+footer a{
+  text-decoration: none;
 }
-
-
+.footer-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer ul {
+  list-style: none;
+}
+footer .col {
+  
+}
 /* Footer Styling Start */
 
-#container {
+.container {
   width: 70%;
   margin: auto;
 }
