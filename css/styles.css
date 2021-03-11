@@ -1,10 +1,17 @@
+html {
+  overflow: scroll;
+  height: 100%;
+}
+
 body {
+  overflow: scroll;
 	font-family: 'Roboto';
 	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
 	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) */
 	color: #504741;
   background: #FEF3E4;
   margin: 0;
+  /* padding-bottom:205px; height of footer */
 }
 
 /* Navbar Styling Start */
@@ -78,7 +85,6 @@ header {
 /* Footer Styling Start */
 
 footer {
-  position: absolute;
   bottom: 0;
   background-color: #FFDE98;
   width: 100%;
@@ -133,6 +139,19 @@ footer .row p{
 }
 
 /* Footer Styling End */
+
+/* Home Page Styling Start */
+
+.bg-image-home {
+  background-image: url('../assets/images/home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 758px;
+}
+
+/* Home Page Styling End */
 
 .container {
   width: 70%;
