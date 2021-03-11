@@ -148,7 +148,17 @@ footer .row p{
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
-  height: 758px;
+  height: 768px;
+}
+
+.home-text {
+  padding-top: 13em;
+  text-align: center;
+}
+.home-text .header{
+  color: #473e39;
+  font-size: 50px;
+  font-weight: 500;
 }
 
 /* Home Page Styling End */
@@ -156,13 +166,4 @@ footer .row p{
 .container {
   width: 70%;
   margin: auto;
-}
-.about {
-  display: inline-block;
-  margin: auto;
-  line-height: normal;
-  margin-top: 15%;
-  background: white;
-  padding: 10px;
-  box-shadow: 1px 1px 3px #888888;
 }
