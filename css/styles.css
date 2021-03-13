@@ -251,7 +251,7 @@ footer .row p{
 }
 
 .best-row {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: auto auto;
   text-align: center;
@@ -259,9 +259,22 @@ footer .row p{
 
 .best-row .b-card img{
   border-radius: 10px;
+  width: 40%;
+}
+.border-right {
+  border-right: 1px dotted #504741;
+}
+.best-row {
+  font-size: 18px;
+}
+
+.best-row a{
+  text-decoration: none;
+  color: #504741;
 }
 
 .norm-row{
+  text-align: center;
   margin: 2rem 0rem;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -269,7 +282,40 @@ footer .row p{
 
 .norm-row .card img{
   border-radius: 10px;
-  width: 90%;
+  width: 75%;
+}
+
+.img-wrapper {
+  margin-bottom: 0px;
+}
+
+.item-name {
+  font-weight: 500;
+}
+.info {
+  font-size: 12px;
+  margin-top: -10px;
+}
+.info:before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px solid #504741;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  right: 10px;
+}
+
+.info:after{
+  content: '';
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px solid #504741;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  left: 10px;
 }
 /* Order Page Styling End */
 
