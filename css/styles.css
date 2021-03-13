@@ -62,9 +62,34 @@ header {
   list-style: none;
 }
 
+.nav-cart a{
+  text-decoration: none;
+  color: #504741;
+}
+
+.cart-number {
+  position: relative;
+  top: -40px;
+  right:-30px;
+  font-family: roboto;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #F9F7F8;
+  background-color: #504741;
+  width: 12px;
+  height:12px;
+  border-radius: 20px;
+  padding: 2px;
+  border: none;
+}
 .topnav li {
   display: inline-block;
   margin-left: 5rem;
+}
+
+.topnav li img {
+  width: 30px;
 }
 
 .topnav .right {
