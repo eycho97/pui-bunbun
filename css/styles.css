@@ -21,6 +21,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 2;
+  margin-bottom: 1.5rem;
 }
 
 .topnav{
@@ -243,6 +244,41 @@ footer .row p{
 }
 /* Home Page Styling End */
 
+/* Order Page Styling Start */
+
+.browse {
+  padding-top: 1rem;
+}
+
+.best-row {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.best-row .b-card img{
+  border-radius: 10px;
+}
+
+.norm-row{
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.norm-row .card img{
+  border-radius: 10px;
+  width: 90%;
+}
+/* Order Page Styling End */
+
+.main-content {
+  margin-top: 6rem;
+}
+.breadcrumbs {
+  font-size: 24px;
+}
 .container {
   width: 70%;
   margin: auto;
