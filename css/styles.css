@@ -150,7 +150,7 @@ footer .row p{
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
-  height: 768px;
+  height: 670px;
 }
 
 .home-text {
@@ -243,6 +243,42 @@ footer .row p{
   font-weight: 500;
 }
 /* Home Page Styling End */
+
+/* About Styling Start */
+
+.about .breadcrumbs{
+  padding: 1rem 0rem;
+}
+.about-img {
+  background-image: url('../assets/images/about.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 610px;
+}
+
+.about-img .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-txt {
+  font-size: 36px;
+  font-weight: 500;
+}
+.about-desc {
+  font-size: 20px;
+}
+.story {
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-img .text{
+  margin-top: 12.5rem;
+}
+
+/* About Styling End */
 
 /* Order Page Styling Start */
 
