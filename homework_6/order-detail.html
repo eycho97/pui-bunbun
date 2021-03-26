@@ -1,0 +1,148 @@
+<!DOCTYPE html>     <!-- Tells the browser this is HTML 5 -->
+<html lang="en">    <!-- Root of the html document and is in English -->
+
+<head>
+<!--The HEAD section has (mostly) items that are not directly seen by the user-->
+    <meta charset="utf-8" />
+    <meta name="author" content="Edward Cho">
+    <title>Home</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="topnav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/images/logo.svg" alt="Bun Bun">
+        </a>
+      </div>
+      <div id="logo-text">
+        <a href="index.html">BunBun</a>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a class="nav-item" href="about.html">About</a></li>
+          <li><a class="nav-item" href="order.html">Order</a></li>
+          <li>
+            <div class="nav-cart"><a href="cart.html">
+              <img src="assets/images/cart.svg" alt="Cart">
+              <div class="cart-number"></div>
+            </a></div>
+          </li>
+        </ul>
+      </div>       
+    </nav>
+  </header>
+  <!-- Navbar -->
+
+  <div class="main-content">
+    <!-- Product Detail -->
+    <div class="browse">
+      <div class="container">
+        <div class="breadcrumbs"><span><a href="order.html">All Buns</a></span> > BunBun's Original</div>
+        <div class="details">
+          <div class="detail-img">
+            <img src="assets/images/original.png" alt="Original"/>
+          </div>
+          <div class="detail-content">
+            <div class="description">
+              Our famous original bun will satisfy your needs.<br>
+              It has been beloved by customers since we opened in 2002.
+            </div>
+            <div class="glazing section">
+              <div class="label">Glazing</div>
+              <div class="choice-btns">
+                <div class="choice">
+                  <input type="radio" id="glaze1" name="glaze">
+                  <label for="glaze1">None</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="glaze2" name="glaze">
+                  <label for="glaze2">Sugar-Milk</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="glaze3" name="glaze">
+                  <label for="glaze3">Vanilla-Milk</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="glaze4" name="glaze">
+                  <label for="glaze3">Double-Chocolate</label>
+                </div>
+              </div>
+            </div>
+            <div class="quantity section">
+              <div class="label">Quantity & Price</div>
+              <div class="choice-btns">
+                <div class="choice">
+                  <input type="radio" id="price1" name="price">
+                  <label for="price1">1 bun - $2.00</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="price2" name="price">
+                  <label for="price2">3 buns - $6.00</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="price3" name="price">
+                  <label for="price3">6 buns - $10.00</label>
+                </div>
+                <div class="choice">
+                  <input type="radio" id="price4" name="price">
+                  <label for="price4">12 buns - $20.00</label>
+                </div>
+              </div>
+            </div>
+            <div class="summary">
+              <div class="total-price"><span style="font-weight:500">Total Price:</span> $2.00</div>
+              <a href="cart.html"><div class="cart-btn">Add to Cart</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Product Detail -->
+  </div>
+    
+
+
+    
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <!-- <a href ="https://www.facebook.com/PrantlsBakery"><img src="images/facebook.png"></a>
+      <a href ="https://twitter.com/prantlsbakery"><img src="images/twitter.png"></a>
+      <a href ="https://www.instagram.com/prantls_bakery/"><img src="images/instagram.png"></a> -->
+      <h3>BunBun Bakery</h3>
+      <div class="footer-row">
+        <div class="col-left">
+          <ul>
+            <li>Contact Information</li>
+            <li>Email: <a href = "mailto:bunbunpittsburgh@gmail.com">bunbunpittsburgh@gmail.com</a></li>
+            <li>Phone: 412-412-4121</li>
+          </ul>
+        </div>
+        <div class="col-right">
+          <p>Social Media</p>
+          <div class="social-media">
+            <a href = "https://www.facebook.com"><img src="assets/images/fbicon.svg" alt="Bun Bun"></a>
+            <a href = "https://www.instagram.com"><img src="assets/images/instaicon.svg" alt="Bun Bun"></a>
+            <a href = "https://www.linkedin.com"><img src="assets/images/inicon.svg" alt="Bun Bun"></a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+        <p>&copy; 2021 BunBun Bakery</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  </body>
+
+</html>

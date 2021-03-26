@@ -1,0 +1,469 @@
+html {
+  overflow: scroll;
+  height: 100%;
+}
+
+body {
+  overflow: scroll;
+	font-family: 'Roboto';
+	font-size: 100%; /* Generally set the font-size to 100% in the body - you can then change with em in the other areas */
+	line-height: 1.7em; /* The line-height property in CSS controls the space between lines of text. It is often set in a unitless value (e.g. line-height: 1.4; ) */
+	color: #504741;
+  background: #FEF3E4;
+  margin: 0;
+  /* padding-bottom:205px; height of footer */
+}
+
+/* Navbar Styling Start */
+header {
+  background: #FFDE98;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+
+.topnav{
+  font-size: 150%;
+  width: 70%;
+  height: 3rem;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.topnav .logo{
+  display: inline-block;
+  position: absolute;
+  top: 0.5rem;
+}
+
+#logo-text {
+  display: inline-block;
+  position: relative;
+  margin-left: 5.5rem;
+}
+#logo-text a{
+  font-family: Roboto;
+  font-weight: 500;
+  display: inline-block;
+  color: #504741;
+  line-height: normal;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+.topnav .logo img{
+  width: 80px;
+}
+.topnav ul {
+  margin-top: 0.25em;
+  list-style: none;
+}
+
+.nav-cart a{
+  text-decoration: none;
+  color: #504741;
+}
+
+.cart-number {
+  position: relative;
+  top: -40px;
+  right:-30px;
+  font-family: roboto;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #F9F7F8;
+  background-color: #504741;
+  width: 12px;
+  height:12px;
+  border-radius: 20px;
+  padding: 2px;
+  border: none;
+}
+.topnav li {
+  display: inline-block;
+  margin-left: 5rem;
+}
+
+.topnav li img {
+  width: 30px;
+}
+
+.topnav .right {
+  float: right;
+  position: relative;
+}
+
+.topnav ul > li > a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  color: #504741;
+  line-height: normal;
+  text-decoration: none;
+}
+
+/* Navbar Styling End */
+
+/* Footer Styling Start */
+
+footer {
+  padding-top: 1em;
+  bottom: 0;
+  background-color: #FFDE98;
+  width: 100%;
+  height: 205px;
+}
+
+footer h3 {
+  margin-bottom: 0px;
+}
+footer a{
+  text-decoration: none;
+  color: #504741;
+}
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "a b c"
+  "d d d";
+}
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-row .col-left {
+  grid-area: a;
+  float: left;
+  margin: 0;
+}
+
+footer .col-right {
+  text-align: right;
+  grid-area: c;
+  float: right;
+}
+
+footer hr {
+  height: 1px;
+  border-width:0;
+  color: #504741;
+  background-color: #504741;
+}
+
+footer .row{
+  text-align: center;
+}
+
+footer .row p{
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+/* Footer Styling End */
+
+/* Home Page Styling Start */
+
+.bg-image-home {
+  background-image: url('../assets/images/home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+  height: 670px;
+}
+
+.home-text {
+  padding-top: 14em;
+  text-align: center;
+}
+.home-text .header{
+  color: #473e39;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.home-text a{
+  text-decoration: none;
+}
+
+.order-btn {
+  background-color: #FFDE98;
+  border: none;
+  color: #473e39;
+  padding: 13px 85px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin: 27px 0 15px 0;
+}
+
+.hour-loc {
+  background: #504741;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hour-loc .container {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "a b";
+}
+
+.hour-loc .hours {
+  display: inline-block;
+  grid-area: a;
+  margin: 0;
+  color: #F9F7F8;
+}
+
+.hour-loc .location {
+  margin-left: 2em;
+  display: inline-block;
+  grid-area: b;
+}
+
+.hour-loc .subhead{
+  color: #F9F7F8;
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+
+.loc-img {
+  margin-top: 4em;
+}
+.loc-img img{
+  width: 70%;
+}
+
+.sub {
+  font-size: 18px;
+  color: #FFDE98;
+  font-weight: 500;
+}
+.open-time {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+  "a b";
+}
+
+.date {
+  grid-area: a;
+}
+.time {
+  grid-area: b;
+  font-weight: 500;
+}
+/* Home Page Styling End */
+
+/* About Styling Start */
+
+.about .breadcrumbs{
+  padding: 1rem 0rem;
+}
+.about-img {
+  background-image: url('../assets/images/about.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 610px;
+}
+
+.about-img .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-txt {
+  font-size: 36px;
+  font-weight: 500;
+}
+.about-desc {
+  font-size: 20px;
+}
+.story {
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-img .text{
+  margin-top: 12.5rem;
+}
+
+/* About Styling End */
+
+/* Order Page Styling Start */
+
+.browse {
+  padding-top: 1rem;
+}
+
+.best-row {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.best-row .b-card img{
+  border-radius: 10px;
+  width: 40%;
+}
+.border-right {
+  border-right: 1px dotted #504741;
+}
+.best-row {
+  font-size: 18px;
+}
+
+.best-row a{
+  text-decoration: none;
+  color: #504741;
+}
+
+.norm-row{
+  text-align: center;
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.norm-row .card img{
+  border-radius: 10px;
+  width: 75%;
+}
+
+.img-wrapper {
+  margin-bottom: 0px;
+}
+
+.item-name {
+  font-weight: 500;
+}
+.info {
+  font-size: 12px;
+  margin-top: -10px;
+}
+.info:before {
+  content: '';
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px solid #504741;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  right: 10px;
+}
+
+.info:after{
+  content: '';
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px solid #504741;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  left: 10px;
+}
+/* Order Page Styling End */
+
+/* Order Detail Stying Start */
+.breadcrumbs a{
+  text-decoration: none;
+  color: #504741;
+}
+
+.details {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.detail-img img{
+  border-radius: 10px;
+  width: 80%;
+}
+
+.detail-content .label{
+  font-weight: 500;
+}
+.detail-content .section {
+  margin: 1.5em 0em;
+}
+.choice-btns {
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 5px;
+}
+
+.choice-btns input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.choice-btns label {
+  display: inline-block;
+    background-color: #FEF3E4;
+    width: 140px;
+    text-align: center;
+    padding: 0px 5px;
+    font-family: roboto;
+    font-size: 14px;
+    border: 1px solid #504741;
+    border-radius: 4px;
+}
+
+.choice-btns label:hover {
+  background-color: #FFDE98;
+}
+
+.summary {
+  margin: 4em 0em;
+}
+
+.summary {
+  font-size: 20px;
+}
+
+.summary .total-price{
+  display: inline-block;
+}
+
+.summary .cart-btn {
+  margin-left: 2rem;
+  display: inline-block;
+  background-color: #504741;
+  color: #FEF3E4;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 10px;
+}
+
+/* Order Detail Stying End */
+
+.main-content {
+  margin-top: 6rem;
+}
+.breadcrumbs {
+  font-size: 24px;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
