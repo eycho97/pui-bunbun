@@ -253,6 +253,7 @@ function updateCart() {
     totalPriceLabel.appendChild(document.createTextNode("Total Price: $" + totalPrice));
     var checkoutBtn = document.createElement("div");
     checkoutBtn.setAttribute("class", "checkout-btn");
+    checkoutBtn.setAttribute("onclick", "checkout()");
     checkoutBtn.appendChild(document.createTextNode("Checkout"));
 		
     totalPriceFrame.appendChild(totalPriceLabel);
@@ -397,4 +398,11 @@ function removeWishItem(item) {
 
 	localStorage.setItem("wishlist", JSON.stringify(wishlist));
 	updateWishlist();
+}
+
+function checkout() {
+  getCart();
+  cart = [];
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCart();
 }
