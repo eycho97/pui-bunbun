@@ -89,7 +89,7 @@ function addToCartFromWish(item){
   getCart()
   var index = item.parentElement.parentElement.getAttribute("index");
   var iteminfo = wishlist[index];
-  if (iteminfo.length == 4) {
+  if (iteminfo.length >= 4) {
     cart.push([iteminfo[0], iteminfo[1], iteminfo[2], iteminfo[3]]);
     //console.log(cart)
 
@@ -106,13 +106,14 @@ function addToWish(){
 	var breadcrumb = document.getElementById('breadcrumb').innerText;
   var title = breadcrumb.split(">")[1].trim();
 	if (bunAdded.quant != null && bunAdded.glaze != null){
-        wishlist.push([title, bunAdded.quant, bunAdded.glaze, bunAdded.price]);
-        //console.log(cart)
+    var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+    wishlist.push([title, bunAdded.quant, bunAdded.glaze, bunAdded.price, utc]);
+    //console.log(cart)
 
-        //store it to local storage
-        var JSONwish = JSON.stringify(wishlist);
-        localStorage.setItem("wishlist", JSONwish);
-    }
+    //store it to local storage
+    var JSONwish = JSON.stringify(wishlist);
+    localStorage.setItem("wishlist", JSONwish);
+  }
     displayCartNumber();	
 }
 
@@ -363,13 +364,22 @@ function updateWishlist() {
 			priceDetails.setAttribute("class", "wish-item-det");
       priceDetails.appendChild(document.createTextNode("Price: $" + wishlist[i][3]));
       itemDetails.appendChild(priceDetails);
+
+      // Date Added
+      var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+      var dateAdded = document.createElement("div");
+			dateAdded.setAttribute("class", "wish-item-det");
+      dateAdded.appendChild(document.createTextNode("Date Added: " + wishlist[i][4]));
+      itemDetails.appendChild(dateAdded);
       itemInfo.append(itemDetails);
+      
 
       var addCart = document.createElement("div");
       addCart.setAttribute("class", "cart-btn");
       addCart.setAttribute("onclick", "addToCartFromWish(this);");
       addCart.appendChild(document.createTextNode("Add To Cart"));
       itemInfo.append(addCart)
+
 
       wishItem.append(itemInfo);
 
