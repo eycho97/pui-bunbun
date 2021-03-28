@@ -432,6 +432,11 @@ footer .row p{
   background-color: #FFDE98;
 }
 
+.choice-btns input[type="radio"]:checked + label {
+  background-color: #FFDE98;
+}
+
+
 .summary {
   margin: 4em 0em;
 }
