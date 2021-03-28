@@ -501,6 +501,7 @@ footer .row p{
 
 .cart-item-info {
   margin-top: 2em;
+  margin-left: 1em;
 }
 .cart-item-details {
   margin-top: 3em;
@@ -585,6 +586,7 @@ footer .row p{
 }
 
 .wish-item-info {
+  margin-left: 1em;
   margin-top: 2em;
 }
 
