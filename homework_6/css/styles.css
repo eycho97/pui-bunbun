@@ -457,7 +457,7 @@ footer .row p{
   display: inline-block;
 }
 
-.summary .cart-btn {
+.cart-btn {
   margin-left: 2rem;
   display: inline-block;
   background-color: #504741;
@@ -503,6 +503,7 @@ footer .row p{
   margin-top: 2em;
 }
 .cart-item-details {
+  margin-top: 3em;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -563,6 +564,43 @@ footer .row p{
   padding: 1rem 0rem;
 }
 /* Cart Styling End */
+
+/* Wishlist Styling Start */
+.empty-wish {
+  text-align: center;
+  margin-top: 8em;
+  margin-bottom: 15em;
+}
+.wish-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 100px;
+  border-bottom: 1px solid #504741;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.wish-item-grid img {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.wish-item-info {
+  margin-top: 2em;
+}
+
+.wish-item-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1em;
+}
+
+.wish-item-info .cart-btn {
+  margin-top: 2em;
+  margin-left: 0em;
+}
+
+
+/* Wishlist Styling Start */
 
 .main-content {
   margin-top: 6rem;
