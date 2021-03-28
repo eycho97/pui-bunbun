@@ -67,6 +67,12 @@ header {
   color: #504741;
 }
 
+.nav-cart {
+  height: 30px;
+  position: relative;
+  top: 30px;
+}
+
 #cart-number {
   position: relative;
   top: -40px;
@@ -95,6 +101,7 @@ header {
 .topnav .right {
   float: right;
   position: relative;
+  top: -20px;
 }
 
 .topnav ul > li > a {
