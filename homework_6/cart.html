@@ -14,7 +14,7 @@
     <script src="js/main.js"></script>
 </head>
 
-<body onload="displayCartNumber();">
+<body onload="updateCart(), displayCartNumber();">
   <!-- Navbar -->
   <header>
     <nav class="topnav">
@@ -43,6 +43,53 @@
   </header>
     
   <div class="main-content">
+    <div class="checkout">
+      <div class="container">
+        <div class="breadcrumbs">Checkout Order</div>
+
+        <div id="empty-cart-frame">
+          <!-- <div class="empty-cart">
+            <br><br>
+            <div class="header">Your Cart is Empty</div>
+              <br>
+            <a href = "order.html"><div class="order-btn">Order Online</div></a>
+          </div> -->
+        </div>
+        
+        <div id="cart-items">
+          <!-- <div class="cart-item-grid">
+            <img src="assets/images/original.png" class="cart-tn">
+            <div class="cart-item-info">
+              <div class="cart-item-title">
+                <div class="label"> Original, Sugar-milk</div>
+                
+              </div>
+              <br>
+              <div class="cart-item-details">
+                <div class="cart-item-det">
+                  Glaze
+                </div>
+                <div class="cart-item-det">
+                  Quantity:
+                </div>
+                <div class="cart-item-det">
+                  Boxes
+                </div>
+                <div class="cart-item-det">Subtotal</div>
+              </div>
+            </div>
+            <div class="remove" id="remove-btn">
+              <button type="button" class="remove-btn remove-action">Remove</button>
+            </div>
+            
+          </div> -->
+        </div>
+        <div id="total-price">
+          <!-- <div class="label">Total Price: 20</div>
+          <div class="checkout-btn">Checkout</div> -->
+        </div>
+      </div>
+    </div>
   </div>
 
     

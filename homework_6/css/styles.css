@@ -189,7 +189,7 @@ footer .row p{
   padding-top: 14em;
   text-align: center;
 }
-.home-text .header{
+.header{
   color: #473e39;
   font-size: 50px;
   font-weight: 500;
@@ -404,8 +404,9 @@ footer .row p{
   width: 80%;
 }
 
-.detail-content .label{
+.label{
   font-weight: 500;
+  font-size: 20px;
 }
 .detail-content .section {
   margin: 1.5em 0em;
@@ -477,6 +478,91 @@ footer .row p{
 }
 
 /* Order Detail Stying End */
+
+/* Cart Styling Start */
+
+.empty-cart {
+  text-align: center;
+  margin-top: 8em;
+  margin-bottom: 15em;
+}
+.cart-item-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 100px;
+  border: 1px solid #504741;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.cart-item-grid img {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.cart-item-info {
+  margin-top: 2em;
+}
+.cart-item-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.remove{
+  height: 20px;
+  width: 15px;
+  right: -10px;
+}
+
+.remove-btn {
+  height: 30px;
+  background-color: #FEF3E4;
+  font-family: roboto;
+  font-size: 13px;
+  color: #504741;
+  border: 1px solid #504741;
+  padding: 7px 13px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+.remove-btn:hover {
+  background-color: #504741;
+  color: white;
+}
+
+#total-price{
+  padding: 1em;
+  float: right;
+}
+
+.checkout-btn {
+  display: inline-block;
+  background-color: #504741;
+  color: #FEF3E4;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #FEF3E4; 
+  color: #504741;
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: 1px solid #504741;
+}
+
+.checkout {
+  margin-bottom: 6em;
+}
+.checkout .breadcrumbs{
+  padding: 1rem 0rem;
+}
+/* Cart Styling End */
 
 .main-content {
   margin-top: 6rem;
