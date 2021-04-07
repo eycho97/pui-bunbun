@@ -1,9 +1,8 @@
 # eycho97.github.io
 
-Created the wishlist page for extra credit.
-
-I will start a new repository for assignment 6B.
+Extra Credit:
+Carousel on order detail page
+Created the wishlist page (Already received credit in 6A).
 
 The website url is:
-https://eycho97.github.io/ which leads to
-https://eycho97.github.io/homework_6/index.html
+https://eycho97.github.io/pui-bunbun
